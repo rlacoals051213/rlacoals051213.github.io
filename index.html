@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong's portfolio</title>
+    <!-- 파비콘(로고), 폰트, 링크설정, 스크립트 -->
+     <!-- 파비콘, 파비콘 제너레이터 -->
+    <link rel="icon" href="./images/play.png" sizes="16*16">
+    <!-- 폰트(한글, 영문) , 구글폰트-->
+     <!-- 메타설정 -->
+    <meta name="Title" content="Hong's portfolio">
+    <meta name="Keywords" content="'Web, Design, Uiux, Video">
+    <meta name="Description" content="Hong's portfolio에 오신것을 환영합니다. 많은 관심 부탁드립니다.">
+    <meta name="Copyright" content="Hong">
+    <meta name="Location" content="Seoul Korea">
+    <!-- 초기reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <!-- 폰트어썸, 부트스트랩, 사용자 css -->
+     <link rel="stylesheet" href="css/index.css">
+     <!-- script  초기플러그인/스와이퍼, .... 사용자스크립트-->
+    <script src="./script/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="navWrap">
+                <h1 id="logo">
+                    <a href="#">
+                        <img src="" alt="logo">
+                    </a>
+                </h1>
+                <button class="navBtn mobile">
+                    <span>메뉴</span>
+                </button>
+                <nav>
+                    <div class="navIn clear">
+                        <span>
+                            <a href="#">메인으로 이동/닫기</a>                        
+                        </span>
+                        <ul>
+                            <li><a href="#logo">HOME</a></li>
+                            <li><a href="#profile">PROFILE</a></li>
+                            <li><a href="#skill">SKILL</a></li>
+                            <li><a href="#list">LIST</a></li>
+                            <li><a href="#web">WEB</a></li>
+                            <li><a href="#design1">DESIGN1</a></li>
+                            <li><a href="#design2">DESIGN2</a></li>
+                            <li><a href="#uiux">UIUX</a></li>
+                            <li><a href="#video">VIDEO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><!--//navWrap-->
+            <div class="visual">
+                <div>
+                    <h2>portfolio</h2>
+                    <p>간단한설명</p>
+                </div>
+                <span class="pc scroll">스크롤하세요</span>
+            </div>
+            <div class="profile" id="profile">
+                <div>
+                    <h2>profile</h2>
+                    <p>간단한 설명</p>
+                </div>
+            </div>
+            <div class="skill" id="skill">
+                <div>
+                    <h2>skill</h2>
+                    <p>간단한 설명</p>
+                </div>
+            </div>
+            <div class="list" id="list">
+                <div>
+                    <h2>list</h2>
+                    <p>간단한 설명</p>
+                </div>
+            </div>
+        </header>
+        <nav class="section mobile">
+            <ul>
+                <li><a href="#web">web</a></li>
+                <li><a href="#design1">design1</a></li>
+                <li><a href="#design2">design2</a></li>
+                <li><a href="#uiux">uiux</a></li>
+                <li><a href="#video">video</a></li>
+            </ul>
+        </nav>
+        <!-- contents -->
+        <div class="main">
+            <section id="web">
+                <h3>WEB</h3>
+                <div class="contWrap1 swiper">
+                    <ul class="cont swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">slide1</a></li>
+                        <li class="swiper-slide"><a href="#">slide2</a></li>
+                        <li class="swiper-slide"><a href="#">slide3</a></li>
+                        <li class="swiper-slide"><a href="#">slide4</a></li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <script>
+                var swiper = new Swiper('.contWrap1', {
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    },
+                    loop: true,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    },
+                    navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+            <section id="design1">
+                <h3>DESIGN 1</h3>
+                <div class="contWrap2">
+                    <ul>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                111
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                222
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                333
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                444
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="design2">
+                <h3>DESIGN 2</h3>
+                <div class="contWrap3 swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                111
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                222
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                333
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                444
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                111
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                222
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                333
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                444
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <script>
+      var swiper = new Swiper('.contWrap3', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+            <section id="uiux">
+                <h3>uiux</h3>
+                
+                <div class="contWrap4 swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                111
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                222
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                333
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                444
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </section>
+            <script>
+      var swiper = new Swiper('.contWrap4', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+            <section id="video">
+                <h3>video</h3>
+                <div class="tabBtn">
+                    <ul>
+                        <li class="on"><a href="#">video1</a></li>
+                        <li><a href="#">video2</a></li>
+                        <li><a href="#">video3</a></li>
+                        <li><a href="#">video4</a></li>
+                        <li><a href="#">video5</a></li>
+                    </ul>
+                </div>
+                <div class="tabCont">
+                    <ul>
+                        <li class="on">
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                111
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                222
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                333
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                444
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#페이지로 이동, 팝업, 버튼, 슬라이드">
+                                555
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+        </div>
+        <footer id="contact">
+            <p>감사인사</p>
+            <p>이메일</p>
+            <p>전화번호</p>
+            <p>상업적 목적x, 크롬에 최적화, ai 이용, 출처</p>
+        </footer>
+    </div>
+</body>
+</html>

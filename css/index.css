@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* 폰트설정 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-indent: -9999px;
+}
+img{
+    vertical-align: top;
+    max-width: 100%;
+    border: none;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.pc{
+    display: none;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.navWrap{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: #fff;
+    left: 0; 
+    top: 0;
+    z-index: 1000;
+}
+#logo{
+    width: 90px;
+    height: 30px;background: #f00;
+    /* margin-left: 15px; */
+    /* 15/500 */
+    margin-left: 3%;
+    margin-top: 25px;
+    float: left;
+}
+.navBtn{
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 29px;
+    right: 3%;
+}
+.navBtn span{
+    display: block;
+    height: 4px;
+    margin: 3px 0;
+    width: 100%;
+    background: #000;
+}
+.navBtn:before,
+.navBtn:after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #000;
+}
+header nav{/*모바일 딤창*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: none;
+}
+header nav.on{
+    display: block;
+}
+.navIn{
+    position: absolute;
+    width: 70%;/*500*70%=350*/
+    height: 100%;
+    background: #fff;
+    right: 0;
+    top: 0;
+    padding-top: 25px;
+}
+/* 좌우20, 350-40=310 */
+.navIn>span{
+    display: block;
+    width: 88.571%;/*310/350*/
+    margin: 0 0 24px 5.714%;
+    /* 20/350=5.714% */
+}
+.navIn>span>a{
+    display: block;
+    width: 61px;
+    height: 22px;background: #ff0;
+    float: right;
+    text-indent: -9999px;
+}
+
+.navIn ul{
+    width: 88.571%;/*310*/
+    margin: 45px 0 0 5.714%;
+    border-top: 2px solid #cfcfcf;
+}
+.navIn ul>li>a{
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 20px;
+    padding-left: 4.839%;
+    /*15/310*/
+}
+
+.visual,
+.profile,
+.skill,
+.list{
+    height: 670px;
+    text-align: center;
+    background: rgba(255,0,0,0.2);
+    padding-top: 350px;
+}
+.profile,
+.list{
+    background: rgba(0,0,255,.2);
+}
+/* mobile에서만 인식되는 nav */
+.section{
+    height: 60px;
+    border-bottom: 1px solid #cfcfcf;
+    text-align: center;
+    background: #f8f8f8;
+    line-height: 60px;
+}
+.section li{
+    display: inline-block;
+    width: 19%;
+}
+.section li a{
+    color: #333;
+    font-size: 14px;
+}
+.section li.on a{
+    color: #90f;
+    font-weight: bold;
+}
+.section.on{
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+/* swiper 테마색상 변경 */
+:root{
+    --swiper-thema-color: #90f !important;
+    --swiper-navigation-size: 20px !important;
+}
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: #333;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: #333;
+    color: #90f;
+}
+/* main 시작 */
+#web{
+    padding: 30px 0 60px;
+    background: rgba(0,255,255,.1);
+}
+#web h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+#web .contWrap1{
+    width: 92%;/*좌우20*/
+    max-height: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+#design1{
+    padding: 27px 0 64px;
+}
+#design1 h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+#design1 .contWrap2{
+    width: 92%;/*좌우20*/
+    max-height: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+#design1 .contWrap2 li{
+    width: 48%;
+    height: 350px;
+    border: 3px solid #f90;
+    margin: 1%;
+    float: left;
+    overflow: hidden;
+}
+#design1 .contWrap2 li:nth-child(2){
+    border-color: #09f;
+}
+#design1 .contWrap2 li:nth-child(3){
+    border-color: #a09;
+}
+#design1 .contWrap2 li:nth-child(4){
+    border-color: #f09;
+}
+
+#design2{
+    padding: 27px 0 64px;
+}
+#design2 h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+#design2 .contWrap3{
+    width: 92%;/*좌우20*/
+    max-height: 600px;
+    height: 500px;
+    margin: 0 auto;
+}
+#design2 .contWrap3 li{
+    width: 48%;
+    height: 400px;
+    border: 3px solid #f90;
+    margin: 1%;
+    float: left;
+    overflow: hidden;
+}
+#design2 .contWrap3 li:nth-child(2){
+    border-color: #09f;
+}
+#design2 .contWrap3 li:nth-child(3){
+    border-color: #a09;
+}
+#design2 .contWrap3 li:nth-child(4){
+    border-color: #f09;
+}
+
+/* uiux */
+#uiux{
+    padding: 27px 0 64px;
+}
+#uiux h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+#uiux .contWrap4{
+    width: 92%;/*좌우20*/
+    max-height: 600px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+#uiux .contWrap4 li{
+    width: 80%;
+    height: 500px;
+    background: #f90;
+}
+
+/* video */
+#video{
+    padding: 27px 0 64px;
+}
+#video h3{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+#video .tabBtn{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto 50px;
+    text-align: center;
+}
+#video .tabBtn ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    gap: 20px;
+}
+#video .tabBtn ul li a{
+    display: block;
+    padding: 5px 10px;
+    background: rgba(255,255,0,0.3);
+    border-radius: 30px;
+    font-size: 14px;
+}
+#video .tabBtn ul li.on a{
+    background: #000;
+    color: #fff;
+}
+#video .tabCont li{
+    width: 92%;
+    height: 500px;
+    margin:  auto;
+    background: rgba(0,0,0,.2);
+    display: none;
+}
+#video .tabCont li.on{
+    display: block;
+}
+
+/* contact */
+#contact{
+    padding: 30px 0;
+    text-align: center;
+    height: 400px;
+    background: #f8f8f8;
+}
+@media screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    /* 1680/1920 */
+    .navWrap{
+        position: relative;
+        width:87.5%;
+        height: 100px;
+        margin: 0 auto;
+    }
+    #logo{
+        width: 120px;
+        height: 40px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    header nav{
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    .navIn{
+        position: static;
+        width: 75%;/*1260*/
+        float: right;
+        padding-top: 0;
+    }
+    .navIn>span{
+        display: none;
+    }
+    .navIn ul{
+        display: flex;
+        border-top: none;
+        margin: 0;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+    }
+    .navIn ul>li>a{
+        height: 100px;
+        line-height: 100px;
+        border-bottom: none;
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .visual,
+    .profile,
+    .skill,
+    .list{
+        height: 1080px;
+        padding-top: 550px;
+    }
+    #web,
+    #design1,
+    #design2,
+    #uiux,
+    #video{
+        padding: 60px 0 80px;
+    }
+    #web h3,
+    #design1 h3,
+    #design2 h3,
+    #uiux h3,
+    #video h3{
+        font-size: 50px;
+        height: 100px;
+        line-height: 100px;
+        margin-bottom: 50px;
+    }
+    #design1 .contWrap2{
+        width: 87.5%;
+    }
+
+    #design1 .contWrap2 li{
+        width: 23%;
+        height: 550px;
+    }
+
+    #design2 .contWrap3{
+        width: 87.5%;
+        height: 800px;
+    }
+    #uiux .contWrap4{
+        width: 87.5%;
+    }
+    #video .tabBtn{
+        height: 40px;
+        line-height: 40px;
+       
+    }
+    #video .tabBtn ul{
+        height: 40px;
+        gap: 40px;
+    }
+    #video .tabBtn ul li a{
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+    #video .tabCont li{
+        width: 87.5%;
+        height: 800px;
+    }
+    #contact{
+        padding: 60px;
+    }
+
+
+
+
+}
